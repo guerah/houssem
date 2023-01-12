@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+body{
+    color:#ababab; 
+    font-family: sans-serif;
+    margin: 0;
+}
+/************** docplanner header **********************/
+
+.docplanner-header{
+    display: flex;
+    justify-content: space-between;
+    padding : 10px;
+    max-width: 1000px;
+    margin: auto;
+}
+.header-menu ul{
+    display: flex;
+    gap: 20px;
+}
+.header-menu li{
+    list-style-type: none;
+}
+.header-menu a{
+    text-decoration: none;
+    color:#ababab; 
+}
+.header-menu a:hover{
+    color: #00c3a5;
+}
+.header-menu .active {
+    color: #00c3a5;
+}
+.logo-docplanner{
+    height: 30px;
+}
+/************** docplanner main **********************/
+.leading-main{
+    max-width: 1000px;
+    margin: auto;
+}
+/*************** introduction section *****************/
+.introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.introduction-title{
+    color: #00c3a5;
+    font-size: 2.125rem;
+    font-family: Roboto;
+}
+.introduction-description{
+   display: flex; 
+   gap: 20px;
+}
+.introduction-description p {
+    line-height: 1.75;
+}
+/********************* service section *********************/
+.services{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.service-box{
+    color: white;
+    border-radius: 10px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+.service-Patient{
+    background-color: #00ccb1;
+}
+.service-Doctors{
+    background-color: #3d83df;
+}
+.service-Clinics{
+    background-color: #1b2734;
+}
+.service-box-title{
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    .services {   
+      flex-direction: column;
+    }
+    .docplanner-header{
+        flex-direction: column;
+    }
+    .header-menu ul{
+        justify-content: space-around;
+    }
+    
+}
+/************** brands section **********************/
+.brands{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.brands h1{
+    max-width: 33%;
+    color: #00c3a5;
+    font-size: 2.125rem;
+    font-family: Roboto;
+}
+.brand-logos a svg {
+    height: 20px;
+    width: auto;
+}
+.brand-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+/********************* Stats section ***************/
+.stats{
+    background: #e5faf8;
+    background-image: linear-gradient(
+    -45deg,rgba(0,204,177,.01) 5%,rgba(61,199,223,.1));
+    overflow: hidden;
+}
+
+.stats-content{
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+.stats-introduction{
+    margin-top: 40px;
+}
+.stats-logo{
+    position: absolute;
+    top: 50%;
+    right:60%;
+}
+.stats-title{
+    font-size: 2.125rem;
+    color: #00c3a5;
+}
+.stats-boxes{
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-gap: 20px;
+    padding: 20px 0px;
+    position: relative;
+}
+.box{
+    background: #fff;
+    border-radius: 5px;
+    height: 250px;
+    text-align: center; 
+    padding: 20px;
+}
+.box-leader{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: 20px;
+}
+.box-appointments{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.box-patients
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.box-doctors{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: -20px;
+}
+.box h3{
+    color: #00c3a5;
+}
+/************** cities section **********************/
+.cities-introduction-header{
+    text-align: center;
+    color: #00c3a5;
+}
+.cites-introduction-description{
+    width: 55%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.cities-pics{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    grid-gap: 20px;
+}
+.City-pic{
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.03);
+    border-radius: 6px;
+}
+.City-pic a {
+    text-decoration: none;
+    color: #747474;
+}
+.openings{
+    padding: 20px;
+    font-size: 1.125em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.join_us{
+    text-align: center;
+    margin-bottom: 30px;
+}
+footer{
+    border-top: 1px solid #eef2f2;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+
+footer p{
+    font-size: 12;
+    color: #ababab;
+}
+.btn-primary{
+    background-color: #3d83df!important ;
+    text-transform: uppercase;
+    font-weight: 700!important;
+    font-size: .75rem!important;
